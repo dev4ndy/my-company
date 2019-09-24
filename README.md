@@ -1,6 +1,6 @@
 # My company
 
-#### Description
+## Description
 This is an example project based on the Laravel framework, where some of the features it offers are used, then I present a list of the features used.
 - Auth
 - Resource controllers
@@ -12,14 +12,14 @@ This is an example project based on the Laravel framework, where some of the fea
 - Blade templates
 - Factories
 
-#### Requirements
+## Requirements
 
 This project is make in Laravel 6.x, then you must comply the [server requirements](https://laravel.com/docs/6.x#server-requirements) of this. Also you must install a Composer, npm and MySQL Ver 15.1.
 
-#### Demo
+## Demo
 [Demo](http://app.my-company.tk)
 
-#### Install the project
+## Install the project
 
 Then the steps to start the project:
 1. Clone this repo.
@@ -69,3 +69,18 @@ MAILGUN_SECRET=your_password
 13. Execute this command `php artisan storage:link`
 14. Now you can serve the application with `php artisan serve`
 15. That's it
+
+## Factories
+
+To provide test data, two factories were provided, one for employees and one for companies, to use them we will perform the following:
+
+1. Enter the project root
+2. Execute this command `php artisan tinker`, this open a php console
+3. Now paste this `factory(App\Models\Company::class, NUMBER_RECORDS)->create();`. Change NUMBER_RECORDS by the number of records you want to generate. This code generates records for the companies table.
+4. Wait for them to generate.
+5. Now paste this `factory(App\Models\Employee::class, NUMBER_RECORDS)->create();`. Change NUMBER_RECORDS by the number of records you want to generate. This code generates records for the employees table.
+6. Wait for them to generate.
+7. You now have data to perform tests.
+
+***Note: Perform these steps in order, since it is necessary to first generate the companies.***
+
