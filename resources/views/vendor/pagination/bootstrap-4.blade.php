@@ -51,25 +51,10 @@
             <div class="p-2 bd-highlight"> 
                 <select class="custom-select" style="height: 35px" onchange="window.location.href = window.location.href.replace('&perPage={{$paginator->perPage()}}', '').replace('?page={{$paginator->currentPage()}}', '') + '?page={{$paginator->currentPage()}}'+'&perPage='+this.value">
                     <option value="10"  @if($paginator->perPage() == '10') selected @endif>10</option>
-                    <option value="50"  @if($paginator->perPage() == '50') selected @endif>50</option>
-                    <option value="100" @if($paginator->perPage() == '100') selected @endif>100</option>
-                </select>
-            </div>
-            <div class="p-2 bd-highlight">
-                <p style="margin-top: 8px;">items per page</p>
-            </div>
-        </div>
-    </nav>
-@else
-    <nav>
-        <div class="d-flex bd-highlight">
-            <div class="mr-auto p-2 bd-highlight">
-            </div>
-            <div class="p-2 bd-highlight"> 
-                <select class="custom-select" style="height: 35px" onchange="window.location.href = window.location.href.replace('perPage={{$paginator->perPage()}}', '').replace('page={{$paginator->currentPage()}}', '') + '?page={{$paginator->currentPage()}}'+'&perPage='+this.value">
-                    <option value="10"  @if($paginator->perPage() == '10') selected @endif>10</option>
-                    <option value="50"  @if($paginator->perPage() == '50') selected @endif>50</option>
-                    <option value="100" @if($paginator->perPage() == '100') selected @endif>100</option>
+                    @if ($paginator->hasMorePages())
+                        <option value="50"  @if($paginator->perPage() == '50') selected @endif>50</option>
+                        <option value="100" @if($paginator->perPage() == '100') selected @endif>100</option>   
+                    @endif
                 </select>
             </div>
             <div class="p-2 bd-highlight">

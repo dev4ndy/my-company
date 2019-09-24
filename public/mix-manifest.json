@@ -3,6 +3,5 @@
     "/css/app.css": "/css/app.css",
     "/css/company.css": "/css/company.css",
     "/js/company.js": "/js/company.js",
-    "/js/edit.js": "/js/edit.js",
-    "/js/pagination.js": "/js/pagination.js"
+    "/js/edit.js": "/js/edit.js"
 }
