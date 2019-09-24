@@ -27,7 +27,7 @@ class StoreEmployee extends FormRequest
             'name' => 'required',
             'last_name' => 'required',
             'email' => 'email|unique:employees,email',
-            'phone' => 'regex:/\+?([0-9]{2})-?([0-9]{3})-?([0-9]{6,7})/',
+            'phone' => 'unique:employees,phone|regex:/\+?([0-9]{2})-?([0-9]{3})-?([0-9]{6,7})/',
         ];
     }
 }
