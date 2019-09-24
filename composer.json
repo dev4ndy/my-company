@@ -1,9 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "dev4ndy/mycompany",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Laravel 6 sample project",
     "keywords": [
-        "framework",
+        "my-company",
+        "project",
         "laravel"
     ],
     "license": "MIT",
