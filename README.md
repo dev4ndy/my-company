@@ -16,7 +16,7 @@ This is an example project based on the Laravel framework, where some of the fea
 This project is make in Laravel 6.x, then you must comply the [server requirements](https://laravel.com/docs/6.x#server-requirements) of this. Also you must install a Composer, npm and MySQL Ver 15.1.
 
 #### Demo
-[Demo](https://app.my-company.tk)
+[Demo](http://app.my-company.tk)
 
 #### Install the project
 
