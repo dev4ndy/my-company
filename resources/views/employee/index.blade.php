@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @push('scripts')
-  <script src="{{asset('js/company.js')}}" type="text/javascript"></script>
+  <script src="{{asset('js/modal-confirm-delete.js')}}" type="text/javascript"></script>
 @endpush
 @section('content')
 <div class="container">
