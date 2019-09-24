@@ -129,9 +129,12 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'phone' => [
+            'regex' => 'The phone format is invalid. Example of valid phones: +57-300-3657667, 01234567891, +573003657667',
         ],
+        'website' => [
+            'url' => 'The :attribute format is invalid. Example of Valid url: https://my-company.tk, http://my-company.tk'
+        ]
     ],
 
     /*
