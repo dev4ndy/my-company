@@ -28,7 +28,7 @@ class UpdateEmployee extends FormRequest
             'name' => 'required',
             'last_name' => 'required',
             'email' => ['required', 'email', Rule::unique('employees', 'email')->ignore($this->employee->id)],
-            'phone' => 'regex:/\+?([0-9]{2})-?([0-9]{3})-?([0-9]{6,7})/',
+            'phone' => ['regex:/\+?([0-9]{2})-?([0-9]{3})-?([0-9]{6,7})/', Rule::unique('employees', 'phone')->ignore($this->employee->id)],
         ];
     }
 }
