@@ -10,6 +10,7 @@ This is an example project based on the Laravel framework, where some of the fea
 - Events and Listeners
 - Mail
 - Blade templates
+- Factories
 
 #### Requirements
 
