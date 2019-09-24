@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @push('styles')
-  <link href="{{asset('css/company.css')}}" rel="stylesheet">
+  <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 @endpush
 @push('scripts')
   <script src="{{asset('js/edit.js')}}" type="text/javascript"></script>
