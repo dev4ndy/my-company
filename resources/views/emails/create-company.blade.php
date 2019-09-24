@@ -6,7 +6,7 @@
     <body> 
         @if ($company->logo)
             <div>
-                <img src="{{$company->logo}}" width="100">
+                <img src="{{asset('storage/'.$company->logo)}}" width="100">
             </div>
         @endif
         <p>
