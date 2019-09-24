@@ -62,5 +62,6 @@ MAILGUN_SECRET=your_password
 10. Execute this command `composer dump-autoload`
 11. Initialize seeder of the Admin User: `php artisan db:seed`
 12. Execute this command `npm run dev`
-13. Now you can serve the application with `php artisan serve`
-14. That's it
+13. Execute this command `php artisan storage:link`
+14. Now you can serve the application with `php artisan serve`
+15. That's it
